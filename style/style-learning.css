@@ -1,0 +1,1147 @@
+/*
+Theme Name: Your Theme Name
+Theme URI: Your Theme URL
+Author: Your Name
+Author URI: Your URL
+Description: Describe your theme and its features.
+Version: Your Theme's Version Number
+License: GNU General Public License
+License URI: license.txt
+Tags: insert tags to describe your theme to help users search for it. Find the list of tags at: http://wordpress.org/extend/themes/about/
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+IMPORTANT: This stylesheet is designed for learning and includes comments for guidance. It's a good idea to remove the comments when preparing your them for distribution. However, keep the section headers (the word "Reset" below is an example of a section header) intact.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/ and Blueprint http://www.blueprintcss.org/
+*/
+
+
+/* =Reset
+-------------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td
+{
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+    outline: 0;
+}
+html
+{
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+
+    overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+        -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body
+{
+    background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section
+{
+    display: block;
+}
+ol,
+ul
+{
+    list-style: none;
+}
+table
+{
+    border-spacing: 0;
+    /* tables still need 'cellspacing="0"' in the markup */
+    border-collapse: separate;
+}
+caption,
+th,
+td
+{
+    font-weight: normal;
+
+    text-align: left;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+}
+blockquote,
+q
+{
+    quotes: '' '';
+}
+a:focus
+{
+    outline: thin dotted;
+}
+a:hover,
+a:active
+{
+    /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+    outline: 0;
+}
+a img
+{
+    border: 0;
+}
+
+
+/* =Global
+----------------------------------------------- */
+
+/* Set a default font size, color, line-height, and font family for your body element and all input elements. These can get overridden later on in the stylesheet, but are useful as base styles. */
+
+
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    clear: both;
+}
+
+
+
+
+
+
+
+/* Text elements */
+p
+{
+    margin-bottom: 1.5em;
+}
+ul,
+ol
+{
+    margin: 0 0 1.5em 3em;
+}
+ul
+{
+    list-style: disc;
+}
+ol
+{
+    list-style: decimal;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul
+{
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+dt
+{
+    font-weight: bold;
+}
+dd
+{
+    margin: 0 1.5em 1.5em;
+}
+b,
+strong
+{
+    font-weight: bold;
+}
+dfn,
+cite,
+em,
+i
+{
+    font-style: italic;
+}
+blockquote
+{
+    font-style: italic;
+
+    margin: 0 1.5em;
+}
+address
+{
+    margin: 0 0 1.5em;
+}
+pre
+{
+    font-family: 'Courier 10 Pitch', Courier, monospace;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    overflow: auto;
+
+    max-width: 100%;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+}
+code,
+kbd,
+tt,
+var
+{
+    font: 15px Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+}
+abbr,
+acronym
+{
+    cursor: help;
+
+    border-bottom: 1px dotted #666;
+}
+mark,
+ins
+{
+    text-decoration: none;
+
+    background: #fff9c0;
+}
+sup,
+sub
+{
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    height: 0;
+
+    vertical-align: baseline;
+}
+sup
+{
+    bottom: 1ex;
+}
+sub
+{
+    top: .5ex;
+}
+small
+{
+    font-size: 75%;
+}
+big
+{
+    font-size: 125%;
+}
+figure
+{
+    margin: 0;
+}
+table
+{
+    width: 100%;
+    margin: 0 0 1.5em;
+}
+th
+{
+    font-weight: bold;
+}
+
+
+/* Form Elements */
+button,
+input,
+select,
+textarea
+{
+    font-size: 100%; /* Corrects font size not being inherited in all browsers */
+
+    margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+
+    vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+    vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+button,
+input
+{
+    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+
+    overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+}
+
+/* Gives a basic visual design to form elements */
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit']
+{
+    font-size: 12px;
+    font-size: 1.4rem;
+    line-height: 1;
+
+    padding: 1.12em 1.5em 1em;
+
+    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+
+    color: rgba(0,0,0,.8);
+    border: 1px solid #ccc;
+    border-color: #ccc #ccc #bbb #ccc;
+    border-radius: 3px;
+    background: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 15px 17px rgba(255,255,255,.5), inset 0 -5px 12px rgba(0,0,0,.05);
+       -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 15px 17px rgba(255,255,255,.5), inset 0 -5px 12px rgba(0,0,0,.05);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 15px 17px rgba(255,255,255,.5), inset 0 -5px 12px rgba(0,0,0,.05);
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+
+    -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+}
+button:hover,
+html input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover
+{
+    border-color: #ccc #bbb #aaa #bbb;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.8), inset 0 15px 17px rgba(255,255,255,.8), inset 0 -5px 12px rgba(0,0,0,.02);
+       -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.8), inset 0 15px 17px rgba(255,255,255,.8), inset 0 -5px 12px rgba(0,0,0,.02);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.8), inset 0 15px 17px rgba(255,255,255,.8), inset 0 -5px 12px rgba(0,0,0,.02);
+}
+button:focus,
+html input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus,
+button:active,
+html input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active
+{
+    border-color: #aaa #bbb #bbb #bbb;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,0,.15);
+       -moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,0,.15);
+            box-shadow: inset 0 -1px 0 rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,0,.15);
+}
+input[type='checkbox'],
+input[type='radio']
+{
+    box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
+    padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type='search']
+{
+    -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+
+    -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+}
+input[type='search']::-webkit-search-decoration
+{
+    /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner
+{
+    padding: 0;
+    /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+
+    border: 0;
+}
+input[type=text],
+input[type=email],
+textarea
+{
+    padding: 6px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: rgba( 255, 255, 255, .3 );
+}
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus
+{
+    background: #fff;
+}
+textarea
+{
+    overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+
+    width: 98%;
+    padding-left: 3px;
+
+    vertical-align: top; /* Improves readability and alignment in all browsers */
+}
+
+/* Links */
+
+
+
+
+/* Alignment - WordPress uses these classes to align images and other elements inside the editor. */
+.alignleft
+{
+    display: inline;
+    float: left;
+
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+.alignright
+{
+    display: inline;
+    float: right;
+
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+}
+.aligncenter
+{
+    display: block;
+    clear: both;
+
+    margin: 1.5em auto;
+}
+
+/* Text meant only for screen readers. It's hidden due to the clip property, but visible in the page source. If you take a look back in the template files at the mark-up for our main menu and other navigation areas, you'll notice that we have headers such as "Menu" and "Site Navigation" wrapped in an <code>h1</code> tag with a class of "assistive-text". Screen readers will read this text aloud, making it easier for users to locate structural sections in your theme.
+*/
+.assistive-text
+{
+    position: absolute !important;
+
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* If you want to give a common style to all of the titles in your theme, here's a place to do it (you can style them individually later) */
+
+
+
+/* =Structure
+----------------------------------------------- */
+
+/* Refer to the HTML structure graphic (http://themeshaper.com/wp-content/uploads/2012/10/html-visual.png) to see how these elements are nested in the mark-up.
+
+Use this section to set widths and margins, and to build a layout. For examples of layouts that you can copy and paste into this section, see:
+https://github.com/Automattic/_s/blob/master/layouts/
+*/
+
+.site
+{
+    /* The the outer-most container, wraps the entire site */
+}
+.site-header
+{
+    /* The container for the entire header area */
+}
+#main
+{
+    /* The container for #primary, #secondary, and #tertiary */
+}
+#primary
+{
+    /* The container for your primary content.*/
+}
+#content
+{
+    /* The container for your post and page content. */
+}
+#secondary
+{
+    /* Container for your first widget area */
+}
+#tertiary
+{
+    /* Container for your second widget area */
+}
+.site-footer
+{
+    /* Container for the entire site footer area */
+}
+
+
+/* =Site Header
+----------------------------------------------- */
+
+/* Style elements inside of the .site-header container */
+
+.site-header hgroup
+{
+    /* Container for site title and description */
+}
+
+.site-description
+{
+    /* This is the tagline */
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+/* Style your navigation menu, which is inside .site-header. A basic drop-down menu structure is provided. */
+
+.main-navigation
+{
+    /* wraps the entire navigation menu */
+}
+.main-navigation:after
+{
+    display: block;
+    /* Clears the floats after the menu */
+    clear: both;
+
+    content: '';
+}
+.main-navigation ul
+{
+    margin: 0;
+    padding-left: 0;
+    /* The menu is an unordered list */
+
+    list-style: none;
+}
+.main-navigation li
+{
+    position: relative;
+    /* Makes the menu "list" items horizontal */
+
+    float: left;
+
+    margin: .5em 0;
+}
+.main-navigation a
+{
+    /* The individual list item links */
+    display: block;
+
+    text-decoration: none;
+}
+.main-navigation ul ul
+{
+    position: absolute;
+    z-index: 99999;
+    top: 1.2em;
+    left: 0;
+    /* Submenu drop-down "box" */
+
+    display: none;
+    float: left;
+}
+.main-navigation ul ul ul
+{
+    top: 0;
+    /* 3rd+ level drop-down "box" */
+    left: 100%;
+}
+.main-navigation ul ul li
+{
+    /* List items inside the drop-down box */
+}
+.main-navigation ul ul a
+{
+    width: 200px;
+    /* Menu links inside the drop-down "box" */
+    padding: 0 1.5em;
+}
+.main-navigation li:hover > a,
+.main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a,
+.main-navigation ul ul a:hover
+{
+    /* Hover styles for menu items */
+}
+
+.main-navigation ul li:hover > ul
+{
+    display: block;
+}
+
+/* Small menu toggle area for screens < 600 pixels wide. The small menu requires some simple JavaScript in order to take affect. See http://themeshaper.com/2012/10/31/the-wordpress-theme-header-template/ for instructions on setting up this script. */
+.menu-toggle
+{
+    cursor: pointer;
+}
+.main-small-navigation .menu
+{
+    display: none;
+}
+
+
+/* =Content
+----------------------------------------------- */
+
+/* Styles for posts and pages */
+.sticky
+{
+    /* Style your sticky posts. This class is applied to the same element as .hentry below. */
+}
+.hentry
+{
+    /* The wrapper for individual posts */
+    margin: 0 0 1.5em;
+    padding-bottom: 1.5em;
+}
+.entry-header
+{
+    /* Container for the entry title, byline and post date */
+}
+.entry-title,
+.entry-title a
+{
+    /* Post titles */
+}
+.page-title
+{
+    /* Page titles */
+}
+body.search .page-title,
+body.archive .page-title
+{
+    /* Optional, if you want your page titles to look different on search and archive pages */
+}
+.entry-meta
+{
+    /* Container for the entry metadata */
+    clear: both;
+}
+
+.byline
+{
+    /* By default, bylines are hidden */
+    display: none;
+}
+.single .byline,
+.group-blog .byline
+{
+    /* Bylines are displayed on single posts and/or when there are multiple authors */
+    display: inline;
+}
+.cat-links
+{
+    /* Styles category links inside the entry meta */
+}
+.tag-links
+{
+    /* Styles links to tags inside the entry-meta */
+}
+.sep
+{
+    /* Separator between category links, cat links, comments links, etc */
+}
+.comments-link
+{
+    /* Link to leave a comment */
+}
+.edit-link
+{
+    /* Link to Edit the post (only shows up for admins)
+}
+.entry-content,
+.entry-summary { /* Container for the post body/excerpt text */
+    margin: 1.5em 0 0;
+}
+
+/* Styling In-Post Tables */
+.entry-content table,
+.comment-content table
+{
+    width: 100%;
+    margin: 0 -.083em 2.083em 0;
+
+    text-align: left;
+
+    border: 1px solid #000;
+    border-left-width: 0;
+}
+.entry-content tr th,
+.entry-content thead th,
+.comment-content tr th,
+.comment-content thead th
+{
+    font-weight: bold;
+
+    padding: .5em 	1.25em;
+
+    border-left: 1px solid #000;
+}
+.entry-content tr td,
+.comment-content tr td
+{
+    padding: .5em 	1.25em;
+
+    border: 1px solid #000;
+    border-width: 1px 0 0 1px;
+}
+.entry-content tr.odd td,
+.comment-content tr.odd td
+{
+    /* If you want to apply alternate styles to even/odd table rows */
+}
+
+.page-links
+{
+    /* Style the page numbers for multi-page posts (posts that have been split with <!--next-page -->. */
+    clear: both;
+
+    margin: 0 0 1.5em;
+}
+
+
+/* =Aside Post Format
+----------------------------------------------- */
+
+/* Just put ".format-aside" before any of the above classes to create special formatting for Aside posts */
+
+.format-aside .entry-content
+{
+    padding-left: 1em;
+
+    border-left: 4px solid #000;
+}
+
+
+/* =Media
+----------------------------------------------- */
+
+/* Styling for images and videos */
+.site-header img,
+.entry-content img,
+.comment-content img,
+.widget img
+{
+    max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+.site-header img,
+.entry-content img,
+.widget-img,
+img[class*='align'],
+img[class*='wp-image-'],
+.wp-caption img
+{
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+.site-header img,
+.entry-content img,
+.widget img,
+img.size-full
+{
+    width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+    max-width: 100%;
+}
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    /* Remove borders and backgrounds from WP smileys */
+
+    border: none;
+}
+.wp-caption
+{
+    /* The container for image captions */
+    max-width: 100%;
+}
+.wp-caption.aligncenter,
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.alignnone
+{
+    /* Add spacing around captions and post text */
+    margin-bottom: 1.5em;
+}
+.wp-caption img
+{
+    /* The image inside the caption container */
+    display: block;
+
+    max-width: 98%;
+    margin: 1.2% auto 0;
+}
+.wp-caption-text
+{
+    text-align: center;
+}
+.wp-caption .wp-caption-text
+{
+    margin: .8075em 0;
+}
+#content .gallery
+{
+    /* Container for image galleries */
+    margin-bottom: 1.5em;
+}
+.gallery-caption
+{
+    font-style: italic;
+}
+#content .gallery a img
+{
+    max-width: 90%;
+    height: auto;
+
+    border: none;
+}
+#content .gallery dd
+{
+    margin: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object
+{
+    max-width: 100%;
+}
+
+
+/* =Navigation
+----------------------------------------------- */
+
+/* Older/Newer Post Navigation */
+
+
+.site-content .nav-previous
+{
+    float: left;
+
+    width: 50%;
+}
+.site-content .nav-next
+{
+    float: right;
+
+    width: 50%;
+
+    text-align: right;
+}
+
+/* =Comments
+----------------------------------------------- */
+
+#comments
+{
+    /* Container for the comments section */
+    clear: both;
+}
+.bypostauthor
+{
+    /* Gives post author comments thier own style */
+}
+
+.commentlist li
+{
+    list-style: none;
+}
+.commentlist,
+.children
+{
+    margin: 0;
+
+    list-style: none;
+}
+.children
+{
+    /* Nested comments */
+    margin: 0 0 0 6%;
+}
+.commentlist li.comment
+{
+    /* Individual top-level comments */
+}
+.commentlist li.pingback
+{
+    /* Individual top-level pingbacks */
+}
+.commentlist li:last-of-type
+{
+    /* Do you want to style the last comment differently, such as remove borders? */
+}
+.commentlist .children li
+{
+    /* Contains individual nested comments */
+}
+.children article.comment,
+.children li.pingback
+{
+    /* Nexted comments and pingbacks */
+    padding-top: 1.0em;
+}
+.comment .avatar
+{
+    /* Comment author's gravatar image */
+}
+.comment-author
+{
+    /* Comment author's name */
+}
+.comment-meta
+{
+    /* Comment date, time, etc */
+}
+.comment-content
+{
+    /* Actual comment text */
+}
+.comment .reply
+{
+    /* The "Reply" link under each comment */
+    text-align: right;
+}
+
+
+/* Comment Form */
+
+.required
+{
+    /* The little asterisk next to a required comment field */
+    color: #800;
+}
+#commentform label
+{
+    /* The text next to each comment form field */
+    padding: 1em 0;
+}
+
+#commentform #comment
+{
+    /* The comment form textarea */
+}
+
+p.nocomments
+{
+    /* Message displayed when there are no comments */
+}
+
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget-area
+{
+    /* All of the sidebar container divs get this common class */
+}
+.widget
+{
+    /* The individual widget */
+    margin: 0 0 1.5em;
+}
+
+.widget ul
+{
+    margin: 0;
+    /* Unordered lists inside widgets */
+
+    list-style: none;
+}
+.widget ul li
+{
+    /* Unordered list items inside widgets */
+    margin-bottom: .25em;
+}
+
+/* Search widget */
+#searchsubmit
+{
+    display: none;
+}
+
+
+/* Sub-Items in Menu & Categories Widgets. These classes are useful if you want to add special styling, such as indention, to sub-items in your menu and categories widgets. */
+.widget-area .sub-menu,
+.widget-area .children
+{
+    margin-left: 1.5em;
+}
+
+
+/* Text Widgets */
+
+
+
+/* Cloud Widgets */
+.wp_widget_tag_cloud div,
+.widget_tag_cloud div
+{
+    line-height: 1.5;
+
+    padding: .231em 0;
+}
+
+/* RSS Widget */
+.rsswidget img
+{
+    /* This is the orange RSS icon to the left of the RSS widget title */
+    margin: 0;
+
+    vertical-align: text-top;
+}
+
+
+
+/* Calendar Widget */
+#wp-calendar
+{
+    width: 100%;
+}
+#wp-calendar caption
+{
+    font-style: italic;
+}
+#wp-calendar thead th
+{
+    text-align: center;
+}
+#wp-calendar tbody,
+#wp-calendar tbody td
+{
+    border: 1px solid #000;
+}
+#wp-calendar tbody
+{
+    border-left-width: 0;
+}
+#wp-calendar tbody td
+{
+    border-width: 1px 0 0 0;
+}
+#wp-calendar tbody td a
+{
+    font-weight: bold;
+}
+
+#wp-calendar tfoot #next
+{
+    text-align: right;
+}
+#wp-calendar #today
+{
+    font-weight: bold;
+}
+
+
+
+
+/* =Site Footer
+----------------------------------------------- */
+
+
+
+
+
+/* =Responsive Structures
+----------------------------------------------- */
+
+@media only screen and (max-width: 768px)
+{
+    #content,
+    #primary,
+    #secondary,
+    #tertiary
+    {
+        /* Remove floats on all structural elements for smaller screens */
+        float: none;
+
+        margin: 0;
+        padding: 0;
+    }
+    #primary,
+    #secondary,
+    #tertiary
+    {
+        /* Make all structural elements full-width */
+        width: 100%;
+    }
+}
+
+
+/* =IE Styling
+----------------------------------------------- */
+
+/* If you have any IE-specific adjustments to make, add them here.
+
+For example:
+
+#ie8 body {
+	color #333;
+}
+
+Will make the sbody text #333 on IE8 only. In order for this to work, you need to set up conditionals to add an ID-selector to the HTML element when IE is detected. For instructions on how to set up the conditionals, see: http://themeshaper.com/2012/10/31/the-wordpress-theme-header-template/
+*/
